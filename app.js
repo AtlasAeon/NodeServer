@@ -30,7 +30,7 @@ app.post('/contact/send', function(req, res){
     service: 'Gmail',
     auth: {
       user: 'cadalethomas95@gmail.com',
-      pass: 'cadale01171995'
+      pass: ''
     }
   });
 
