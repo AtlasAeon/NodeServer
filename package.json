@@ -2,7 +2,7 @@
   "name": "simpleserver",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
@@ -16,6 +16,7 @@
     "nodemailer": "*"
   },
   "engines": {
-    "node": "4.4.4"
+    "node": "4.4.4",
+    "npm": "2.15.1"
   }
 }
