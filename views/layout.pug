@@ -6,19 +6,39 @@ html
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
     // Import materialize.css
     link(type='text/css', rel='stylesheet', href='stylesheets/materialize.css', media='screen,projection')
+    // Import FontAwesome
+    link(type='text/css', rel='stylesheet', href='fontawesome/css/font-awesome.css', media='screen,projection')
     // Let browser know website is optimized for mobile
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(type="text/css", rel='stylesheet', href='stylesheets/style.css')
   body
     header
       nav
-        .nav-wrapper
-          a.brand-logo(href='/') Test Node
-          ul#nav-mobile.right.hide-on-med-and-down
-            li
-              a(href='/about') About
-            li
-              a(href='/contact') Contact
+        ul#nav-mobile.side-nav.fixed.blue-grey.darken-4(style='transform: translateX(0%);')
+          li
+            img#myface.circle.center(src='/images/myface.jpg')
+          li
+            #social-icons.grey.lighten-3
+              a(href='https://www.linkedin.com/in/cadale-thomas-0716a6bb', target='_blank')
+                i.fa.fa-linkedin.fa-2x(title='LinkedIn')
+              a(href='http://github.com/atlasaeon', target='_blank')
+                i.fa.fa-github.fa-2x(title='Github')
+          li
+            a.side--home.grey-text.text-lighten-4(href='/Index')
+              i.fa.fa-home.fa-2x
+              |  Home
+          li
+            a.side--projects.grey-text.text-lighten-4(href='/Projects')
+              i.fa.fa-code.fa-2x
+              |  Projects
+          li
+            a.side--about.grey-text.text-lighten-4(href='/About')
+              i.fa.fa-child.fa-2x
+              |  About
+          li
+            a.side--contact.grey-text.text-lighten-4(href='/Contact')
+              i.fa.fa-send.fa-2x.grey-text.text-lighten-4
+              |  Contact
     main
       block content
     footer(class='page-footer')
