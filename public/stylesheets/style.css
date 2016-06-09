@@ -7,3 +7,31 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+#myface {
+    margin-left: 45px;
+    height: 150px;
+    width: auto;
+}
+
+.parallax-container {
+  height: 300px;
+}
+
+/*code for left right cards*/
+.card-image {
+  float: left;
+  width: 40%;
+  height: 250px;
+}
+.card-image img {
+  height: 100%;
+}
+.right-content {
+  width: 60%;
+  float: left;
+  margin-bottom: auto;
+}
+.card-title {
+  padding-left: 20px;
+}
