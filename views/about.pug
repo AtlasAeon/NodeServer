@@ -1,6 +1,15 @@
 extends layout
 
 block content
-  h1 Welcome!
-  p
-  | This is the about page
+  div(class="parallax-container")
+    div(class="parallax")
+      img(src="~/images/astronaut.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 161px, 0px);")
+
+h1 Hello!
+div(class="container")
+  h4 A little about me:
+  p I'm a 21 year old junior developer from Cleveland, Ohio eager to learn as much as I can get my hands on in software development.
+  h4 Skills
+  p Agile software development, ASP.NET MVC 5, C#, JavaScript, HTML5, CSS3, Bootstrap, Github, Website design, Database management and design, SQL, and Jquery
+  a(href="http://github.com/atlasaeon" target="_blank")
+    i(class=" center fa  fa-github  fa-2x " title="Github")
