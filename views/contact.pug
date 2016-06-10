@@ -1,6 +1,7 @@
 extends layout
 
 block content
+
   .row
     form(method='post', action='contact/send').col.s12
       h1 Contact
@@ -21,3 +22,16 @@ block content
           label(for='message') Message
       button.btn.waves-effect.waves-light(type='submit' name='action') Submit
         i.material-icons.right send
+
+  .parallax-container
+    .parallax
+      img(src='/images/pencil.jpg', alt='Unsplashed background img 1', style='display: block; transform: translate3d(-50%, 161px, 0px);')
+  .container.center
+    h1 Contact Me!
+    p Feel free to contact me!
+    a(href='mailto:cadalethomas95@hotmail.com') Cadalethomas95@hotmail.com
+    br
+    a(href='https://www.linkedin.com/in/cadale-thomas-0716a6bb', target='_blank')
+      i.fa.fa-linkedin.fa-2x(title='LinkedIn')
+    a(href='http://github.com/atlasaeon', target='_blank')
+      i.fa.fa-github.fa-2x(title='Github')

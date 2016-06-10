@@ -1,7 +1,17 @@
 extends layout
 
 block content
-  .container
-    h1 #{title}
-    p
-      | This is served using Node.js, routing and mvc framework is Express, and the view engine is Pug! (formally Jade) Additions to the website will be Nodemailer for sending emails to me, Mongodb for the database, Angular for the controllers, and React for the views!
+  #index-banner.parallax-container
+    .section.no-pad-bot
+      .container
+        br
+        .row.center
+          h3.header.col.s12.grey-text.text-lighten-2
+            | “The capacity to learn is a gift; The ability to learn is a skill; The willingness to learn is a choice.”
+          h3.header.col.s12.grey-text.text-lighten-2 ― Brian Herbert, House Harkonnen
+        br
+    .parallax
+      img(src='/images/jet-engine.jpg', alt='Unsplashed background img 1', style='display: block; transform: translate3d(-50%, 161px, 0px);')
+  .container.center
+    h1 Cadale Thomas
+    h3 Life long student, developer, gamer
